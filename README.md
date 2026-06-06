@@ -126,7 +126,7 @@ Publish a diagram showing how a data center load can trigger transmission upgrad
 
 - Systems map of data center site constraints
 - Glossary of power market and interconnection terms
-- Site selection scoring rubric
+- [Missouri data center site-selection rubric](artifacts/missouri-data-center-site-selection-rubric.md)
 - Incentive package memo
 - Cooling tradeoff table
 - Transmission constraint explainer
