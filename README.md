@@ -12,6 +12,8 @@ Learn with AI -> build something small -> explain the concept -> keep the artifa
 
 Data centers sit at the intersection of power markets, transmission systems, land use, water, cooling, economic development, and fast-changing compute demand. The goal of this repo is to turn that complexity into a visible learning trail: concepts studied, questions asked, small research artifacts built, and public explanations that show growing proficiency.
 
+A second thread runs through the work: AI infrastructure should be evaluated alongside local AI capability. Communities need the ability to understand, govern, procure, implement, and adapt AI systems, not only host physical infrastructure.
+
 ## Public Learning Structure
 
 Each learning item should include:
@@ -127,6 +129,7 @@ Publish a diagram showing how a data center load can trigger transmission upgrad
 - Systems map of data center site constraints
 - Glossary of power market and interconnection terms
 - [Missouri data center site-selection rubric](artifacts/missouri-data-center-site-selection-rubric.md)
+- [Rural AI capability program](artifacts/rural-ai-capability-program.md)
 - Incentive package memo
 - Cooling tradeoff table
 - Transmission constraint explainer
