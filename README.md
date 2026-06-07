@@ -24,6 +24,16 @@ Each learning item should include:
 - `Portfolio Proof`: a public output that shows understanding.
 - `Reflection`: what clicked, what remains uncertain, and what to ask next.
 
+## Pattern Library
+
+The `patterns/` folder contains reusable design primitives that can generate applied artifacts.
+
+Patterns are not final memos. They are architecture grammar: mechanisms, design rules, failure modes, and artifact prompts extracted from source writing.
+
+Current pattern library:
+
+- [Mythic infrastructure pattern language](patterns/mythic-infrastructure-pattern-language.md)
+
 ## Starter Trail
 
 ### 1. Data Centers As Infrastructure
@@ -139,6 +149,7 @@ Publish a diagram showing how a data center load can trigger transmission upgrad
 
 - `reflections/`: short learning notes after each session
 - `artifacts/`: finished maps, memos, tables, and explainers
+- `patterns/`: reusable infrastructure primitives and design grammar
 - `prompts/`: useful ChatGPT prompts and prompt patterns
 - `portfolio-drafts/`: draft public writeups before polishing
 - `sources/`: links and notes from public sources
