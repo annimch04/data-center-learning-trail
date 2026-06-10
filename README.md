@@ -140,6 +140,7 @@ Publish a diagram showing how a data center load can trigger transmission upgrad
 - Glossary of power market and interconnection terms
 - [Missouri data center site-selection rubric](artifacts/missouri-data-center-site-selection-rubric.md)
 - [Rural AI capability program](artifacts/rural-ai-capability-program.md)
+- [Local AI team for rural municipalities](artifacts/local-ai-team-for-rural-municipalities.md)
 - Incentive package memo
 - Cooling tradeoff table
 - Transmission constraint explainer
