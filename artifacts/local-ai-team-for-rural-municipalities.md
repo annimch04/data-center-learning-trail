@@ -207,7 +207,28 @@ Every assistant request should follow a basic lifecycle:
 
 This lifecycle matters because municipal AI systems will touch public trust. The system should not only produce language. It should preserve traceability.
 
-### 4. Public Projection Layer
+### 4. Municipal AI Gateway
+
+The deployment should include a local gateway service that sits between municipal users, local AI models, and any approved cloud or commercial AI systems.
+
+The gateway is the boundary layer. It gives the municipality a single governed path for AI requests instead of allowing staff workflows, vendor tools, and model providers to sprawl independently.
+
+The gateway should:
+
+- Receive OpenAI-compatible or similar chat requests from approved tools
+- Route routine requests to a local model by default
+- Write prompt, response, model, timestamp, route, and hash records into the local civic memory register
+- Check authorization, data sensitivity, boundary state, and release rules before routing
+- Escalate to a cloud or commercial model only when the request requires capability the local model cannot provide
+- Log why cloud escalation occurred
+- Block or pause requests that include restricted records, sensitive data, or unclear consent
+- Preserve enough trace data for review without exposing private municipal content unnecessarily
+
+This layer is also where cost control becomes operational. Instead of sending every request to a metered commercial API, the municipality can handle common internal work locally and reserve paid cloud calls for defined cases: complex analysis, specialist review, high-stakes drafting support, or model comparison.
+
+Local-first does not mean isolated. It means the local system owns the boundary before information leaves.
+
+### 5. Public Projection Layer
 
 Some outputs may become public: FAQs, briefing memos, policy drafts, grant narratives, infrastructure explainers, or public benefit questions.
 
@@ -307,6 +328,9 @@ The deployment should include long-term support for the life of the agreement.
 Recommended support commitments:
 
 - Base model updates and compatibility maintenance
+- Municipal AI gateway maintenance
+- Local and cloud model provider configuration
+- Cost monitoring for local versus cloud-routed requests
 - Security and dependency updates
 - Operator manuals
 - Staff onboarding and refresher training
@@ -331,6 +355,7 @@ Recommended early use cases:
 - Grant opportunity tracker
 - Public meeting summary workflow
 - Vendor evaluation checklist
+- Local-first chat gateway for approved municipal AI requests
 - Public records and data boundary inventory
 - Plain-language resident FAQ draft
 - Workforce partner map
@@ -368,6 +393,7 @@ Pilot outputs should include:
 - AI use and public release policy draft
 - Vendor evaluation checklist
 - Infrastructure proposal question bank
+- Gateway configuration and cost-routing runbook
 - Operator manual
 - Escalation matrix
 - Staff training session
@@ -384,6 +410,9 @@ Useful metrics:
 - Officials can evaluate vendor claims with a standard checklist.
 - Public-facing drafts include clearer sourcing, uncertainty, and review status.
 - Sensitive data boundaries are documented before broader AI use.
+- Routine AI requests can be handled locally before using paid cloud systems.
+- Cloud or commercial model escalation is logged with purpose, route, and review status.
+- Estimated API spend avoided can be compared against local model operating costs.
 - The municipality has an escalation path for legal, procurement, cybersecurity, public records, and infrastructure questions.
 - At least one low-risk internal workflow is tested, revised, and documented.
 - The community can ask stronger questions about data center, broadband, utility, or AI infrastructure proposals.
